@@ -1,0 +1,115 @@
+#fs-frm{
+
+display: flex;
+flex-direction: column;
+width: 500px;
+background-color: $main-color;
+
+
+
+
+}
+
+#fs-frm h3 {
+
+padding: 15px 0px 15px 0px;
+margin: 0;
+font-size: 35px;
+text-align: center;
+color: $third-color;
+
+
+
+}
+
+#fs-frm-inputs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+}
+
+input{
+
+
+    padding: 10px;
+    border: none;
+    outline: none;
+
+
+}
+
+.inputbox{
+
+position: relative;
+
+
+}
+
+.text_input{
+
+    border-bottom: solid $fourth-color 2px;
+    background-color: rgba(255, 255, 255, 0);
+    color: $third-color;
+    font-size: 20px;
+    margin-left: 10px;
+
+
+}
+
+label{
+
+position: absolute;
+top: 5px;
+left: 10px;
+pointer-events: none;
+
+font-size: 20px;
+color: $label-color;
+transition: 0.5s;
+
+
+}
+
+.text_input:focus ~ label{
+
+color: $third-color;
+font-size: 15px;
+transform: translateY(-20px);
+
+}
+
+.text_input:valid ~ label{
+
+    color: $third-color;
+    font-size: 15px;
+    transform: translateY(-20px);
+    
+    }
+
+
+
+
+textarea{
+
+
+    padding: 10px;
+    border: none;
+    border-bottom: 2px $fourth-color solid ;
+    resize: none;
+    outline:0px none transparent;
+
+
+
+}
+
+
+
+#submit_button{
+
+color: $main-color;
+background-color: $third-color;
+margin: 50px;
+
+}

@@ -1,0 +1,53 @@
+@import "color" ;
+
+
+#accueil{
+
+    height: 800px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    padding-top: 250px;
+
+        #logo_accueil{
+            z-index: 3;
+            width: 500px;
+            
+
+        }
+
+        p{
+
+        z-index: 2;
+        color: $main-color;
+        font-size: 25px;
+
+        }
+
+        a{
+
+            z-index: 1;
+            padding: 20px;
+            background-color: $main-color;
+            border-radius: 20px;
+            color: $secondary-color;            
+            border: solid 1px $secondary-color;
+            cursor: pointer;
+
+            transition: background-color 1s ease-out, color 1s ease-out ,border 1s ease-out;
+
+
+        }
+
+        a:hover{
+
+            background-color: $secondary-color;
+            color: $main-color;
+            border: solid 1px $main-color;
+
+
+        }
+    }

@@ -1,0 +1,89 @@
+#fs-frm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  background-color: white;
+}
+
+#fs-frm h3 {
+  padding: 15px 0px 15px 0px;
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+  color: #A16700;
+}
+
+#fs-frm-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  border: none;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.inputbox {
+  position: relative;
+}
+
+.text_input {
+  border-bottom: solid black 2px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #A16700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  pointer-events: none;
+  font-size: 20px;
+  color: #c2c2c2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.text_input:focus ~ label {
+  color: #A16700;
+  font-size: 15px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.text_input:valid ~ label {
+  color: #A16700;
+  font-size: 15px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px black solid;
+  resize: none;
+  outline: 0px none transparent;
+}
+
+#submit_button {
+  color: white;
+  background-color: #A16700;
+  margin: 50px;
+}
+/*# sourceMappingURL=formulaire_styles.css.map */
