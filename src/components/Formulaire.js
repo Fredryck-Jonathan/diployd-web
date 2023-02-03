@@ -33,7 +33,7 @@ function form() {
 
       </fieldset>
       
-  <input id='submit_button' type="submit" value="Submit"></input>
+  <input id='submit_button' type="submit" value="Envoyer"></input>
 </form>
   );
 }

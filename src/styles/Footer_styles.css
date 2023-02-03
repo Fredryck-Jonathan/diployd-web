@@ -41,9 +41,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  .footer {
-    margin-top: 20px;
-  }
   .footer h4 {
     font-size: 12px;
     margin-bottom: 50px;

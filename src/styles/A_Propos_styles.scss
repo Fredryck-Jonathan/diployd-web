@@ -88,17 +88,38 @@
 
             .competence{
 
+
                 flex-basis: 1;
                 width: 35%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
 
                 border-radius: 20px;
-                padding: 10px;
+                padding: 50px 10px 10px 10px;
 
 
 
+                &:hover{
+
+
+                    .competence_icone{
+
+                        font-size: 60px;
+
+                    }
+
+                }
+
+                .competence_icone{
+
+                    font-size: 50px;
+                    color: $third-color;
+                    transition: all 0.5s ease-out;
+
+
+                }
 
 
                 h3{
@@ -116,6 +137,21 @@
             }
 
         }
+
+
+}
+
+
+@media screen and (max-width: 750px){
+
+
+#A_Propos #info{
+
+    flex-direction: column;
+    align-items: center;
+
+
+}
 
 
 }

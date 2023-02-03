@@ -19,7 +19,7 @@ function A_Propos() {
     return (
         <div id='A_Propos'>
 
-            <h2>Qui je suis et quel est mon travail, en tant que développeur Web</h2>
+            <h2>Qui suis-je et quel est mon travail, en tant que développeur Web</h2>
 
             <div id='info'>
                 <div id='box_img'><img src={require("../assets/photo_jonathan.jpg")} alt='Representation de Jonathan'></img></div>
@@ -28,21 +28,21 @@ function A_Propos() {
             
             <div id='competence_div'>
                 <div className='competence'>
-                    <img></img>
+                    <div className='competence_icone'><ion-icon name="code-slash-outline"></ion-icon></div>
                     <h3>Développeur Front-End</h3>
-                    <p>En tant que développeur Web, je suis capable a partir d'un cahier des charges et d'une maquettes réaliser une intégration front-end</p>
+                    <p>En tant que développeur Web, je suis capable a partir <strong>d'un cahier des charges</strong> et <strong>d'une maquettes</strong> réaliser <strong>une intégration front-end</strong></p>
                     <p><strong>Compétences: HTML, CSS, JavaScript et React.js</strong></p>
                 </div>
 
                 <div className='competence'>
-                    <img></img>
+                    <div className='competence_icone'><ion-icon name="cloud-done-outline"></ion-icon></div>
                     <h3>Développeur Back-End</h3>
-                    <p>Je suis capable de vous développer votre serveur Node.js et configurer une base de onnées MongoDB.</p>
+                    <p>Je suis capable de vous développer votre serveur <strong>Node.js</strong> et configurer une base de données <strong>MongoDB</strong>.</p>
                     <p><strong>Compétences: Node.js et MongoDB</strong></p>
                 </div>
 
                 <div className='competence'>
-                    <img></img>
+                    <div className='competence_icone'><ion-icon name="bar-chart-outline"></ion-icon></div>
                     <h3>audit SEO</h3>
                     <p>Je suis capable de vous proposer un audit SEO afin d'améliorer votre site internet</p>
                     <p><strong>Compétence: Audit SEO</strong></p>

@@ -23,6 +23,12 @@
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.material-icons_carousel:hover {
+  color: orange;
 }
 
 .carousel-container {
@@ -39,13 +45,13 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow: hidden;
-  height: 500px;
+  height: 650px;
   border-radius: 25px;
   position: relative;
 }
 
 .carousel-item {
-  height: 500px;
+  height: 650px;
   min-width: 100%;
   width: 100%;
   display: -webkit-box;
@@ -61,6 +67,10 @@
   -o-object-position: center;
      object-position: center;
   background-color: #0f1b2e;
+}
+
+.carousel-item img {
+  max-width: 100%;
 }
 
 .indicators {
@@ -93,10 +103,10 @@
     font-size: 40px;
   }
   .carousel-container {
-    height: 255px;
+    height: 305px;
   }
   .carousel-item {
-    height: 255px;
+    height: 305px;
   }
   .indicators {
     margin-top: 110px;

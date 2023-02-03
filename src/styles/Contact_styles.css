@@ -11,7 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 70px;
   margin: auto;
   padding-top: 50px;
   height: 1000px;
@@ -29,10 +29,11 @@
   font-size: 50px;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 
 #contact #message_intro_contact {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
 }
 
@@ -44,8 +45,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  gap: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -89,7 +95,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.75em;
+  font-size: 2em;
   -webkit-transition: background-color 0.5s ease-out, color 0.5s ease-out;
   transition: background-color 0.5s ease-out, color 0.5s ease-out;
   color: black;
@@ -111,7 +117,7 @@
 }
 
 #contact #contact_containers #contact_infos .contact_infos_containers .contact_infos_infos h4 {
-  font-size: 1.25em;
+  font-size: 1.50em;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -119,6 +125,7 @@
 }
 
 #contact #contact_containers #contact_infos .contact_infos_containers .contact_infos_infos p {
+  font-size: 1em;
   color: white;
 }
 
@@ -165,11 +172,11 @@
   color: white;
   margin: 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #contact #contact_containers #contact_infos #contact_infos_social #contact_infos_social_icon {
-  font-size: 1.50em;
+  font-size: 1.75em;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,5 +200,25 @@
 
 #contact #contact_containers #contact_form {
   width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  #contact #message_intro_contact {
+    text-align: center;
+  }
+  #contact #contact_containers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 /*# sourceMappingURL=Contact_styles.css.map */

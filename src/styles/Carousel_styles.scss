@@ -27,6 +27,13 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
   cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.material-icons_carousel:hover{
+
+  color: orange;
+
 }
 
 
@@ -38,7 +45,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 overflow: hidden;
-height: 500px;
+height: 650px;
 border-radius: 25px;
 position: relative;
 }
@@ -46,7 +53,7 @@ position: relative;
 
 .carousel-item{
 
-height: 500px;
+height: 650px;
 min-width: 100%;
 width: 100%;
 display: flex;
@@ -56,6 +63,12 @@ object-fit: cover;
 object-position: center;
 background-color: $secondary-color;
 
+
+}
+
+.carousel-item img {
+
+max-width: 100% ;
 
 }
 
@@ -114,7 +127,7 @@ font-size: 40px;
 .carousel-container{
 
 
-height: 255px;
+height: 305px;
 
 }
 
@@ -124,7 +137,7 @@ height: 255px;
 .carousel-item{
 
 
-height: 255px;
+height: 305px;
 
 }
 

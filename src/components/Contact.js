@@ -15,7 +15,7 @@ function Contact() {
         <div id='contact'>
 
             <div id='contact_intro'>
-                <h3>Contact</h3>
+                <h3>Contactez-moi !</h3>
                 <p id='message_intro_contact'>Pour toutes information concernant mon travail, pour passez une commande.</p> 
             </div>
 
