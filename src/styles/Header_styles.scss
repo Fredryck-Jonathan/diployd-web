@@ -134,9 +134,14 @@ height: 100%;
 }
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 500px){
+
+#ul_header li a{
+
+    font-size: 20px;
 
 
+}
 
     
 }

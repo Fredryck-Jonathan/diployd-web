@@ -137,3 +137,27 @@ transition: all 0.5s ease-out;
     border: solid 2px $third-color;
 
 }
+
+
+@media screen and (max-width: 500px){
+
+    #fs-frm{
+
+        width: 100%;
+
+        h3{
+
+            font-size: 20px;
+
+        }
+
+    }
+
+    .text_input{
+
+        width: 60%;
+
+    }
+
+
+}

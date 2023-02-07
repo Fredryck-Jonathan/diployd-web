@@ -221,4 +221,18 @@
     gap: 50px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #contact h3 {
+    font-size: 25px;
+  }
+  #contact #message_intro_contact {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  #contact #contact_containers #contact_form {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=Contact_styles.css.map */

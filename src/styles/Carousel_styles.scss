@@ -61,7 +61,8 @@ justify-content: center;
 transition: 1s cubic-bezier(0.39,0.575,0.565,1);
 object-fit: cover;
 object-position: center;
-background-color: $secondary-color;
+background-color: $gray-color;
+
 
 
 }
@@ -110,16 +111,37 @@ line-height: 142.6%;
 
 
 color: $main-color;
+padding: 5px;
+border-radius: 5px;
+background-color: rgba($secondary-color, $alpha: 0.8);
+
+
+
 
 }
 
-@media screen and (max-width: 750px){
+.description_carousel{
+
+position: absolute;
+bottom: 60px;
+font-size: 20px ;
+padding: 10px;
+border-radius: 15px;
+color: white;
+background-color: rgba($secondary-color, $alpha: 0.8);
+
+}
+
+
+
+
+@media screen and (max-width: 1000px){
 
 
 .material-icons_carousel{
 
 
-font-size: 40px;
+font-size: 70px;
 
 
 }
@@ -127,28 +149,32 @@ font-size: 40px;
 .carousel-container{
 
 
-height: 305px;
+height: 505px;
 
 }
 
+.description_carousel{
 
+font-size: 15px;
+bottom: 0px;
+
+}
 
 
 .carousel-item{
 
 
-height: 305px;
+height: 505px;
 
 }
 
+.desktop_img{
 
-.indicators {
-
-
-  margin-top: 110px;
-
+  height: 300px;
+  margin: auto;
 
 }
+
 
 
 
@@ -157,6 +183,21 @@ height: 305px;
 display: none;
 
 }
+
+
+
+
+
+}
+
+@media screen and (max-width: 500px){
+
+  .desktop_img{
+
+    height: 180px;
+
+  
+  }
 
 
 }

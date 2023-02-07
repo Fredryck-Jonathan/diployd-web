@@ -95,4 +95,10 @@ li, #header_nav {
   left: 300;
   opacity: 1;
 }
+
+@media screen and (max-width: 500px) {
+  #ul_header li a {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=Header_styles.css.map */

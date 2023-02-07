@@ -3,28 +3,13 @@ import React, { useState} from "react"
 
 import '../styles/Carousel_styles.css'
 
-let props = [
-  {
-    "pictures": [
-      "../assets/img-01.jpg",
-      "../assets/img-02.jpg",
-      "../assets/img-03.jpg",
-      "../assets/img-04.jpg",
-    ]
-  }
-  ]
-
+import { data_carousel } from "../data/data_carousel"
 
 
 
 const Carousel = () => {
 
-  let props = [
-        "../img-01.jpg",
-        "../img-02.jpg",
-        "../img-03.jpg",
-        "../img-04.jpg",
-      ]
+  let props = data_carousel
     
   
   
@@ -44,7 +29,7 @@ const Carousel = () => {
   
     }
 
-    
+
 
 
 
@@ -55,13 +40,25 @@ const Carousel = () => {
     return (
         <div className="carousel-container">
             {data.map((item, index) => {
-              return <a href={item} target="_blank" rel="noopener noreferrer" style={{ transform: `translate(-${currentIndex * 100}%)` }}
-              key={index} alt='representation habitat'  className="carousel-item"><img 
-                  src={item}></img></a>
-            })
 
-                
-            }
+                if (item.mobile == false) {
+                    return (
+                        <a href={item.lien} target="_blank" rel="noopener noreferrer" style={{ transform: `translate(-${currentIndex * 100}%)` }} key={index} alt={item.description} className="carousel-item">
+                            <img class='desktop_img'src={item.img}></img>
+                            <p className="description_carousel">{item.description}</p>
+                        </a>
+                    )
+                } else {
+                    return (
+                        <a href={item.lien} target="_blank" rel="noopener noreferrer" style={{ transform: `translate(-${currentIndex * 100}%)` }} key={index} alt={item.description} className="carousel-item">
+                            <img class='mobile_img'src={item.img}></img>
+                            <p className="description_carousel">{item.description}</p>
+                        </a>
+                    )  
+
+
+                }
+            })}
             
 
 

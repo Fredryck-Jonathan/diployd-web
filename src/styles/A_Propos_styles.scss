@@ -142,16 +142,65 @@
 }
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1200px){
 
 
-#A_Propos #info{
+#A_Propos {
+
+    height: 2000px;
+
+    h2{
+
+    font-size: 25px;
+
+    }
+
+    #info{
 
     flex-direction: column;
     align-items: center;
 
+        p{
+
+            width: 80%;
+            font-size: 15px;
+
+        }
+
+    }
+
+    #competence_div{
+
+        flex-direction: column;
+
+        .competence{
+
+            width: 90%;
+            margin: auto;
+
+        }
+
+    }
+
+
+    
 
 }
+
+
+
+
+}
+
+@media screen and (max-width: 1200px){
+
+
+    #A_Propos {
+
+        height: 2200px;
+
+    }
+
 
 
 }

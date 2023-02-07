@@ -66,7 +66,7 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background-color: #0f1b2e;
+  background-color: gray;
 }
 
 .carousel-item img {
@@ -96,23 +96,47 @@
   line-height: 142.6%;
   /* or 26px */
   color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(15, 27, 46, 0.8);
 }
 
-@media screen and (max-width: 750px) {
+.description_carousel {
+  position: absolute;
+  bottom: 60px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(15, 27, 46, 0.8);
+}
+
+@media screen and (max-width: 1000px) {
   .material-icons_carousel {
-    font-size: 40px;
+    font-size: 70px;
   }
   .carousel-container {
-    height: 305px;
+    height: 505px;
+  }
+  .description_carousel {
+    font-size: 15px;
+    bottom: 0px;
   }
   .carousel-item {
-    height: 305px;
+    height: 505px;
   }
-  .indicators {
-    margin-top: 110px;
+  .desktop_img {
+    height: 300px;
+    margin: auto;
   }
   .number_carousel {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .desktop_img {
+    height: 180px;
   }
 }
 /*# sourceMappingURL=Carousel_styles.css.map */

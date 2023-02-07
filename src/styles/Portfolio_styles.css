@@ -21,4 +21,13 @@
   text-align: center;
   color: #0f1b2e;
 }
+
+@media screen and (max-width: 500px) {
+  #portfolio {
+    height: 800px;
+  }
+  #portfolio h2 {
+    font-size: 30px;
+  }
+}
 /*# sourceMappingURL=Portfolio_styles.css.map */

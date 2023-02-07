@@ -241,3 +241,37 @@
 
 
 }
+
+@media screen and (max-width: 500px){
+
+
+
+
+    #contact{
+
+        h3{
+
+            font-size: 25px;
+
+        }
+
+        #message_intro_contact{
+
+            font-size: 20px;
+            width: 90%;
+            margin: auto;
+
+        }
+    
+    
+        #contact_containers #contact_form{
+
+
+            width: 80%;
+
+        }
+
+    }
+
+
+}

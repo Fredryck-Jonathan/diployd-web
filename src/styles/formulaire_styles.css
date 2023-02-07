@@ -105,4 +105,16 @@ textarea {
   background-color: white;
   border: solid 2px #a16203;
 }
+
+@media screen and (max-width: 500px) {
+  #fs-frm {
+    width: 100%;
+  }
+  #fs-frm h3 {
+    font-size: 20px;
+  }
+  .text_input {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=formulaire_styles.css.map */

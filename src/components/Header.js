@@ -38,43 +38,86 @@ function animationheader(event){
 
 }
 
-window.addEventListener('scroll', function (e){
+window.addEventListener('scroll', function (e) {
     
-    if (window.scrollY < 908) {
+    if (this.window.innerWidth > 1200) {
     
-
-        document.getElementById('header_nav').classList.remove("active")
-    }
-
-    if (window.scrollY > 908) {
+        if (window.scrollY < 908) {
     
 
-        document.getElementById('header_nav').classList.add("active")
-    }
+            document.getElementById('header_nav').classList.remove("active")
+        }
 
-
-    if (window.scrollY > 908 && window.scrollY < 1600) {
+        if (window.scrollY > 908) {
     
-        console.log('changementoklm', document.getElementById('header_nav').style)
-        let liPropos = document.getElementById('propos_nav')
-        animationheader(liPropos)
+
+            document.getElementById('header_nav').classList.add("active")
+        }
 
 
-
-    }
-
-    if (window.scrollY > 1900 && window.scrollY < 2800) {
+        if (window.scrollY > 908 && window.scrollY < 1600) {
     
-        console.log('changementoklm')
-        let liPropos = document.getElementById('portfolio_nav')
-        animationheader(liPropos)
-    }
+            console.log('changementoklm', document.getElementById('header_nav').style)
+            let liPropos = document.getElementById('propos_nav')
+            animationheader(liPropos)
 
-    if (window.scrollY > 2800) {
+
+
+        }
+
+        if (window.scrollY > 1900 && window.scrollY < 2800) {
     
-        console.log('changementoklm')
-        let liPropos = document.getElementById('contact_nav')
-        animationheader(liPropos)
+            console.log('changementoklm')
+            let liPropos = document.getElementById('portfolio_nav')
+            animationheader(liPropos)
+        }
+
+        if (window.scrollY > 2800) {
+    
+            console.log('changementoklm')
+            let liPropos = document.getElementById('contact_nav')
+            animationheader(liPropos)
+        }
+        
+    } else {
+
+        if (window.scrollY < 908) {
+    
+
+            document.getElementById('header_nav').classList.remove("active")
+        }
+
+        if (window.scrollY > 908) {
+    
+
+            document.getElementById('header_nav').classList.add("active")
+        }
+
+
+        if (window.scrollY > 908 && window.scrollY < 3150) {
+    
+            console.log('changementoklm', document.getElementById('header_nav').style)
+            let liPropos = document.getElementById('propos_nav')
+            animationheader(liPropos)
+
+
+
+        }
+
+        if (window.scrollY > 3200 && window.scrollY < 3800) {
+    
+            console.log('changementoklm')
+            let liPropos = document.getElementById('portfolio_nav')
+            animationheader(liPropos)
+        }
+
+        if (window.scrollY > 3800) {
+    
+            console.log('changementoklm')
+            let liPropos = document.getElementById('contact_nav')
+            animationheader(liPropos)
+        }
+
     }
 })
 

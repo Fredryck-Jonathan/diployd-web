@@ -126,7 +126,13 @@
   color: #0f1b2e;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1200px) {
+  #A_Propos {
+    height: 2000px;
+  }
+  #A_Propos h2 {
+    font-size: 25px;
+  }
   #A_Propos #info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -135,6 +141,26 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #A_Propos #info p {
+    width: 80%;
+    font-size: 15px;
+  }
+  #A_Propos #competence_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #A_Propos #competence_div .competence {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #A_Propos {
+    height: 2200px;
   }
 }
 /*# sourceMappingURL=A_Propos_styles.css.map */

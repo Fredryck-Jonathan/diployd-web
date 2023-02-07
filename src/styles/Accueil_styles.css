@@ -44,4 +44,13 @@
   color: white;
   border: solid 1px white;
 }
+
+@media screen and (max-width: 500px) {
+  #accueil p {
+    font-size: 20px;
+  }
+  #accueil #logo_accueil {
+    width: 200px;
+  }
+}
 /*# sourceMappingURL=Accueil_styles.css.map */
